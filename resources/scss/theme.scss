@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  min-height: 100vh;
+  background: transparent linear-gradient(180deg, #000000 0%, #3E0F0F 85%, #8B0000 100%) 0% 0% no-repeat padding-box;
+  padding: 70px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+label {
+  margin: 0;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.btn {
+  outline: none;
+  border: none;
+}
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: rgb(84, 10, 10) !important;
+}
+
+.platform {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  height: 100%;
+}
+.platform-search {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+}
+.platform-search-inputs {
+  margin-top: 30px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  border-radius: 12px;
+}
+.platform-search-inputs input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.platform-search-inputs label,
+.platform-search-inputs #microphone-btn {
+  padding: 0 20px;
+}
+.platform-search-inputs #microphone-btn {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+}
+.platform-search .subPartPage .platform-search-area-cardTwo {
+  border-radius: 12px 12px 0 0;
+  backdrop-filter: 0;
+  -webkit-backdrop-filter: 0;
+  box-shadow: none;
+}
+.platform-search .subPartPage .collapsed {
+  border-radius: 12px;
+}
+.platform-search .subPartPage .collapse-body {
+  background-color: rgb(84, 10, 10);
+  padding: 20px;
+  border-radius: 0 0 12px 12px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.platform-search .subPartPage .collapse-body button {
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: white;
+}
+.platform-search-area {
+  margin: 30px -30px 0 -30px;
+  gap: 20px 0;
+}
+.platform-search-area-card {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  padding-bottom: 15px;
+}
+.platform-search-area-card-img {
+  width: 100%;
+  padding: 15px;
+  background-color: #918b8b;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+.platform-search-area-card-img img {
+  width: 100%;
+  height: 60px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.platform-search-area-card:hover {
+  background-color: #918b8b;
+}
+.platform-search-area-cardTwo {
+  color: white;
+  background-color: rgb(84, 10, 10);
+  padding: 15px 30px;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 12px;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+}
+.platform-search-area-cardTwo button {
+  color: white !important;
+  text-decoration: none;
+  font-weight: 500;
+}
+.platform-search-area-cardTwo:hover {
+  background-color: rgb(97, 4, 4);
+  color: white;
+}
+.platform-search-area-cardTwo:focus {
+  color: white !important;
+  background-color: red !important;
+}
+.platform-search-area-cardTwo span {
+  margin-left: 10px;
+}
+
+.nav-tabs {
+  margin-top: 30px;
+  border: 0;
+  width: 100%;
+  display: flex;
+  gap: 0 20px;
+}
+.nav-tabs .nav-item {
+  flex: 1;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  background-color: #a39c9c;
+  border-color: #a39c9c;
+}
+.nav-tabs .nav-item:hover {
+  background-color: #b7b7b7;
+}
+.nav-tabs .nav-item a:hover {
+  border: 0;
+}
+.nav-tabs .nav-link {
+  color: #555;
+  position: relative;
+}
+.nav-tabs .nav-link.active {
+  color: #610010;
+  background-color: white;
+  border-color: white;
+  border-radius: 8px;
+}
+
+.footer {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4901960784);
+  margin-top: 150px;
+}
+
+.platform-part {
+  padding: 15px 30px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 30px;
+  border-radius: 8px;
+  color: white;
+  background: transparent linear-gradient(180deg, #232323 0%, #610010 100%) 0% 0% no-repeat padding-box;
+}
+
+.platform-main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.platform-main-header h2 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+}
+.platform-main-header .btn-group .btn {
+  padding: 0;
+  color: white;
+  font-size: 28px;
+}
+
+.platform-entry {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: 600;
+}
+.platform-entry-logo {
+  margin: auto;
+  width: 300px;
+  height: 80px;
+}
+.platform-entry-logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.platform-entry-header {
+  font-size: 32px;
+  margin: 160px 0 50px 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.platform-entry-inputs {
+  display: flex;
+  flex-direction: column;
+}
+.platform-entry-inputs input {
+  border-radius: 12px;
+  padding: 15px 30px;
+  background-color: rgb(226, 226, 226);
+  transition: background-color 0.2s ease;
+}
+.platform-entry-inputs input:focus, .platform-entry-inputs input:hover {
+  background-color: white;
+}
+.platform-entry-inputs label {
+  font-size: 28px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.platform-entry-inputs .password-register-label {
+  margin-top: 30px;
+}
+.platform-entry-inputs button {
+  padding: 15px 30px;
+  background-color: transparent;
+  color: white;
+  border: 3px solid white;
+  border-radius: 12px;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 210px;
+  margin: 50px 0 0 auto;
+}
+
+.platform-firm {
+  margin-top: 30px;
+  border-radius: 12px;
+  padding: 30px;
+  background: transparent linear-gradient(180deg, #232323 0%, #610010 100%) 0% 0% no-repeat padding-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.platform-firm-logo {
+  max-width: 300px;
+  height: 130px;
+}
+.platform-firm-logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.platform-firm-info {
+  width: 180px;
+  color: white;
+  font-weight: 600;
+  gap: 15px;
+}
+.platform-firm-info div {
+  display: flex;
+  justify-content: space-between;
+}
+.platform-firm-info-name {
+  width: 120px;
+}
+.platform-firm-info span {
+  width: 40px;
+  text-align: right;
+}
